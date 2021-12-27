@@ -1,0 +1,73 @@
+.movie
+{
+  background-color: blueviolet;
+  border-radius: 3px;
+  width: 300px;
+  overflow: hidden;
+  margin: 0.5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+ 
+}
+
+.movie-container
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+body{
+  background-color: royalblue;
+  color:white;
+  font-family: "Poppins";
+  margin: 0;
+}
+header {
+  background-color: royalblue;
+  display: flex;
+  flex-direction: column-reverse ;
+  padding: 1rem;
+  justify-content: flex-end;
+
+ 
+  justify-content: flex-end;
+}
+.movie img{
+  max-width: 100%;
+}
+
+.movie-info h3{
+  margin: 0;
+  margin-left: 5px;
+  
+}
+.movie-info{
+  top: 1000px;
+  color: rgb(0, 255, 191);
+  align-items:flex-start ;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+}
+
+.movie-over
+{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: white;
+  font-size: 10px;
+  bottom:0;
+  left:0;
+  right:0;
+  color:steelblue;
+  max-height:100%;
+  padding: 0.4rem;
+  transform: translateY(100%);
+  transition:transform 0.3s ease-in-out;
+
+}
+.movie:hover .movie-over{
+  transform: translateY(10%);
+}
